@@ -1,0 +1,125 @@
+body{
+  background-color:rgb(0, 0, 0);
+  background-image:url(./images/pbgg.jpg);
+  background-repeat: no-repeat;
+  background-size:100%;
+  
+}
+.navbar{
+    position: absolute;
+    top: 0;left: 0;
+    justify-content: left;
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    height:30px;
+    align-items: center;
+    padding:20px 0px 20px ;
+}
+#logo{
+    width: 55px;
+    height:55px;
+    margin-left:60px;
+    margin-right:855px;
+}
+#n img{
+    filter:invert(100%);
+    width: 23px;
+    height:23px;
+}
+.navbar #n:hover {
+
+    background-color:rgb(23, 125, 234);
+    color:whitesmoke;
+    transform-origin: left;
+}
+.navbar a{
+    display: flex;
+    margin-left: 25px;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;font-weight: 500;
+    color:rgb(255, 255, 255);
+    padding: 4px 15px;border-radius: 20px;
+}
+.spview{
+    margin-left: 50px;
+    position: relative; margin-top: 80px;
+}
+.card {
+    width: 80%;
+    height: 80px;
+    background: #323131e4;
+    border-radius: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: left;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+    margin-left: 120px; margin-bottom: 20px;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+  
+  .textContent {
+    margin-left: 25px; justify-content: center;
+    color: white; align-items: center;
+    display: inline-flex; flex-direction: row; flex-grow: 100px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  .textContent h1 
+  {
+    font-size: 1.5em;font-weight: bold;
+    width: 150px;margin-left: 15px;
+  }
+  .textContent p {
+    font-size: 1.5em;font-weight: bold;
+    margin-left: 300px;width: 200px;
+    color: green;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  .removeButton{
+    background:linear-gradient(220.55deg, #e65530 0%, #D02020 100%);
+    width:195px;height:50px;
+    margin-left: 250px;
+    border-radius: 20px;border:none;
+    font-weight: bolder;
+    }
+  .removeButton:hover{
+    background:linear-gradient(220.55deg, #e65530 0%, #D02020 100%);
+    width:195px;height:50px;margin-left: 250px;
+    border-radius: 20px;border:none;transform: scale(1.01);
+    font-weight: bolder;color:azure;
+    }
+    .poheader{
+      justify-content: center;
+      align-items: center;
+      position:relative;
+      margin-top: 140px;
+    }
+    .poheader H1{
+      font-size: 40px; margin-left: 640px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: whitesmoke;
+    }
+
+    #purchase-animation {
+  width: 100px;
+  height: 100px;
+  background-color:#D02020;
+  border-radius: 50%;
+  position: absolute;
+  color: whitesmoke;
+  top: 50%;left: 50%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+#banime{
+  display:grid;
+  margin-top: 35px; size:5000px;font-weight: lighter;
+  justify-content: center; align-items: center;
+}

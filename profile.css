@@ -1,0 +1,159 @@
+body{
+    background-color:rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-size:100%;
+    
+  }
+  
+  .navbar{
+      position: absolute;
+      top: 0;left: 0;
+      justify-content: left;
+      width: 100%;
+      margin-top: 0px;
+      display: flex;
+      height:30px;
+      align-items: center;
+      padding:20px 0px 20px ;
+  }
+  #logo{
+      width: 55px;
+      height:55px;
+      margin-left:60px;
+      margin-right:855px;
+  }
+
+  #n img{
+    filter:invert(100%);
+    width: 23px;
+    height:23px;
+}
+
+  .navbar #n:hover {
+  
+      background-color:rgb(23, 125, 234);
+      color:whitesmoke;
+      transform-origin: left;
+  }
+  .navbar a{
+      display: flex;
+      margin-left: 25px;
+      text-decoration: none;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 20px;font-weight: 500;
+      color:rgb(255, 255, 255);
+      padding: 4px 15px;border-radius: 20px;
+  }
+  
+  .form-group {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px; 
+}
+
+
+.profile-section {
+    display: flex;
+    padding: 20px;
+    padding-top: 60px;
+    color: #fff; /* Change text color to white */
+  }
+  .container {
+    display: flex;
+    max-width: auto; 
+    margin: 0 auto;justify-content: space-between;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .user-details {
+    margin-bottom: 20px;
+  }
+  .detail {
+    margin-bottom: 10px;
+  }
+  label {
+    font-weight: bold;
+  }
+  #edit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #edit-btn:hover {
+    background-color: #45a049;
+  }
+  .card1 {
+    
+    width: 600px; 
+    height: auto;
+    background: #323131e4;
+    border-radius: 20px;
+    padding: 20px;margin-left: 25px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+    margin-bottom: 20px;margin-top:55px;
+  }
+  .card2 {
+
+    width: 600px; 
+    height: auto;
+    background: #323131e4;
+    border-radius: 20px;
+    padding: 20px;margin-top:55px;
+    margin-left: 35px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .card-body {
+    display: grid;
+    gap: 40px;
+  }
+  
+  .form-group {
+    justify-content: space-between;
+    padding:8px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    color: #fff;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-header h2 {
+    margin-top: 0;
+  }

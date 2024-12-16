@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/jpg" href="./images/tra.png"/>
+    <script src="chart.js"></script>
+    <link rel="stylesheet" href="chart.css">
+    <title>TradeX</title>
+  </head>
+  <header>
+    <div class="nav">  
+      <a href="interface.html"><img id="log" src="./images/TRADE.png"></a>
+      <div class="search">
+        <label for="ticker" id="p"></label>
+        <input type="text" id="ticker" placeholder="Symbol">
+      </div>
+      <img id="si" src="./images/srchicon.png" onclick="updatesymbol()">
+      <a><button id="buyButton">BUY</button></a>
+    </div>
+  </header>
+  
+  <div id="purchasePopup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h1 id=stock></h1>
+      <input type="number" id="quantityInput" placeholder="Enter stock quantity">
+      <button id="confirmButton">BUY</button>
+    </div>
+  </div>
+  <div id="purchase-animation">
+    <h2 id="banime"></h2>
+  </div>
+  
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+  </div> 
+
+  <body>
+    <script>
+      updateSymbol();
+      document.getElementById('ticker').addEventListener('keypress', onEnterKeyPress);
+      document.addEventListener("DOMContentLoaded", function()
+  {
+    var buyButton = document.getElementById("buyButton");
+    var purchasePopup = document.getElementById("purchasePopup");
+    var closeButton = document.querySelector(".close");
+    var confirmButton = document.getElementById("confirmButton");
+    var quantityInput = document.getElementById("quantityInput");
+    closeButton.addEventListener("click", function() {
+      purchasePopup.style.display = "none";
+    });
+
+    buyButton.addEventListener("click", function() {
+      var symbol = document.getElementById("ticker").value;
+      document.getElementById("stock").innerHTML = symbol;
+      purchasePopup.style.display = "block";
+
+    });
+
+    confirmButton.addEventListener("click", function() {
+      var symbol = document.getElementById("ticker").value;
+      var quantity = parseInt(quantityInput.value);
+      if (!isNaN(quantity) && quantity > 0) {
+        var purchasedItem = {
+          name: symbol,
+          quantity: quantity
+        };
+        var purchasedItems = JSON.parse(localStorage.getItem("purchasedItems")) || [];
+        purchasedItems.push(purchasedItem);
+        localStorage.setItem("purchasedItems", JSON.stringify(purchasedItems));
+        purchasePopup.style.display = "none";
+      } else {
+        alert("Please enter a valid quantity.");
+      }
+      var purchaseAnimation = document.getElementById('purchase-animation');
+      document.getElementById('banime').innerHTML="✔";
+      purchaseAnimation.style.transform = 'translate(-50%, -50%) scale(1)';Z
+    });
+});
+    </script>
+
+  </body>
+</html>
+
+
+
+
+

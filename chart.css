@@ -1,0 +1,106 @@
+.nav{
+    display:flex;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  #log{
+    width: 100px;
+    height: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  #si{
+    margin-left:-45px;margin-top:7px;
+    width: 45px;z-index: 1;
+    height: 45px;
+  
+  }
+  #ticker{
+    margin-left: 10px;margin-bottom: 5px;
+    margin-top: 10px;
+    height: 32px; width: 750px;
+    border-radius: 18px; padding: 5px 20px;
+    outline: none; border:none; 
+  }
+  body{
+    background-color:rgb(9, 9, 9);
+  }
+  #buyButton:hover{
+    background: linear-gradient(220.55deg, #00B960 0%, #00552C 100%);
+    width: 450px;height:50px;transform: scale(1.01);
+    border-radius: 20px;margin-top: 5px;
+    margin-left: 50px;margin-right:25px;
+    font-weight: bolder;color:azure;
+    }
+    
+
+    #buyButton{
+    background: linear-gradient(220.55deg, #00B960 0%, #00552C 100%);
+    width: 450px;height:50px;border:none;
+    border-radius: 20px;margin-top: 5px;
+    margin-left: 50px;margin-right:25px;
+    font-weight: bolder;
+    }
+
+.popup-content {
+  background: #323131e4;
+  margin: 140px 400px ; 
+  padding: 50px; border-radius:15px;
+  border:none; color: azure;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 550px; height:250px;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+}
+.popup-content h1{
+  color:rgb(0, 101, 202);
+  justify-content: left;
+  font-size: 50px;
+}
+#purchasePopup{
+  display: none;
+}
+#quantityInput{
+  width: 45%; height:8px; 
+  border-radius: 12px;
+  border:none;padding: 20px;
+
+}
+#confirmButton{
+  background: #00B960;
+  width:100px; height:45px;
+  border-radius: 12px;
+  border:none;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#purchase-animation {
+  width: 100px;
+  height: 100px;
+  background-color: #28a745;
+  border-radius: 50%;
+  position: absolute;
+  color: whitesmoke;
+  top: 50%;left: 50%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+#banime{
+  display:grid;
+  margin-top: 15px; font-size: 50px;
+  justify-content: center; align-items: center;
+}
+
